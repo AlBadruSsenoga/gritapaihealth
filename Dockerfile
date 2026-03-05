@@ -26,4 +26,4 @@ EXPOSE 8501
 # Default command (overridden by docker-compose)
 # CMD ["bash"]
 
-CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "frontend/main.py", "--server.port=8501", "--server.address=0.0.0.0"]

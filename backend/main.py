@@ -1,4 +1,4 @@
-"""AI Healthcare System - Backend API"""
+"""Gritap AI Health - Backend API"""
 import sys
 import os
 import uuid
@@ -171,7 +171,8 @@ app.add_middleware(CORSMiddleware,
     allow_origin_regex=r"https://.*\.streamlit\.app",
     allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 app.add_middleware(TrustedHostMiddleware, 
-    allowed_hosts=["localhost", "127.0.0.1", "aio-health-backend.onrender.com", "*"])
+    #allowed_hosts=["localhost", "127.0.0.1", "aio-health-backend.onrender.com", "*"])
+allowed_hosts=["localhost", "127.0.0.1", "gritapai.onrender.com", "*"])
 app.add_middleware(RateLimitMiddleware)
 
 # --- Routes ---
